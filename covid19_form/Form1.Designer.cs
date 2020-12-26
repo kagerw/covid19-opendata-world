@@ -33,7 +33,8 @@
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.button1 = new System.Windows.Forms.Button();
-            this.txtIso = new System.Windows.Forms.TextBox();
+            this.cbFunction = new System.Windows.Forms.ComboBox();
+            this.cboIso = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,26 +64,35 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // txtIso
+            // cbFunction
             // 
-            this.txtIso.Location = new System.Drawing.Point(435, 393);
-            this.txtIso.Name = "txtIso";
-            this.txtIso.Size = new System.Drawing.Size(100, 19);
-            this.txtIso.TabIndex = 2;
+            this.cbFunction.FormattingEnabled = true;
+            this.cbFunction.Location = new System.Drawing.Point(298, 393);
+            this.cbFunction.Name = "cbFunction";
+            this.cbFunction.Size = new System.Drawing.Size(121, 20);
+            this.cbFunction.TabIndex = 3;
+            // 
+            // cboIso
+            // 
+            this.cboIso.FormattingEnabled = true;
+            this.cboIso.Location = new System.Drawing.Point(434, 393);
+            this.cboIso.Name = "cboIso";
+            this.cboIso.Size = new System.Drawing.Size(121, 20);
+            this.cboIso.TabIndex = 4;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(658, 450);
-            this.Controls.Add(this.txtIso);
+            this.Controls.Add(this.cboIso);
+            this.Controls.Add(this.cbFunction);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.chart1);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -90,7 +100,8 @@
 
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtIso;
+        private System.Windows.Forms.ComboBox cbFunction;
+        private System.Windows.Forms.ComboBox cboIso;
     }
 }
 
